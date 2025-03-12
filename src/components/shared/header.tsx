@@ -15,14 +15,14 @@ export const Header = () => {
 				</div>
 				<nav>
 					<div className="flex gap-8 lg:gap-10 items-center">
-						<Link href="/about" className="header-link text-white text-lg">
+						<Link href="/about" className="header-link text-white text-base">
 							about
 						</Link>
 						<a
 							href="/resume.pdf"
 							target="_blank"
 							rel="noopener noreferrer"
-							className="header-link text-white text-lg"
+							className="header-link text-white text-base"
 						>
 							resume
 						</a>
