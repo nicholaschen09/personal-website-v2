@@ -16,7 +16,7 @@ const About = () => {
 				</h1>
 				<p className="text-left text-[16.8px] font-light text-[hsl(var(--foreground))] mt-4 md:mt-6 lg:mt-8 mr-10 max-w-[50%] ml-10">
 					<Balancer>
-						I&apos;m a Systems Design Engineering student at the University of
+						I'm a Systems Design Engineering student at the University of
 						Waterloo who loves creating cool things.
 					</Balancer>
 				</p>
