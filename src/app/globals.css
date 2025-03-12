@@ -102,27 +102,16 @@ body {
 	height: 900px;
 }
 
-@keyframes typing {
-	from {
-		width: 0;
-	}
-	to {
-		width: 93%;
-	}
-}
-
 @keyframes blink {
-	to {
+	50% {
 		border-color: transparent;
 	}
 }
 
 .typing-animation {
+	display: inline-block;
 	border-right: 2px solid hsl(var(--foreground));
-	white-space: nowrap;
 	overflow: hidden;
-	animation:
-		typing 3s steps(40, end) 1s 1 normal both,
-		blink 0.8s steps(1, end) infinite;
-	width: 0;
+	animation: blink 0.8s steps(1, end) infinite;
+	word-wrap: break-word;
 }
