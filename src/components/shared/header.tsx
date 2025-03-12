@@ -19,7 +19,7 @@ export const Header = () => {
 							about
 						</Link>
 						<a
-							href="/resume1.pdf"
+							href="/resume.pdf"
 							target="_blank"
 							rel="noopener noreferrer"
 							className="header-link text-white text-lg"
