@@ -57,3 +57,72 @@
 		@apply bg-background text-foreground;
 	}
 }
+
+.header-link {
+	padding: 8px 13px;
+	transition:
+		background-color 0.3s ease,
+		color 0.3s ease,
+		text-decoration 0.3s ease;
+	border-radius: 8px;
+}
+
+.header-link:hover {
+	background-color: #2b2b2b;
+	text-decoration: underline;
+	border-radius: 8px;
+}
+
+.nav-link {
+	padding: 8px 13px;
+	transition:
+		background-color 0.3s ease,
+		color 0.3s ease,
+		text-decoration 0.3s ease;
+	border-radius: 8px;
+	color: #ffffff;
+}
+
+.nav-link:hover {
+	background-color: #2b2b2b;
+	text-decoration: underline;
+	border-radius: 8px;
+}
+
+html,
+body {
+	height: 100%;
+	margin: 0;
+}
+
+.dotted-paper-background {
+	background: radial-gradient(circle, #494949 1px, rgba(0, 0, 0, 0) 1px);
+	background-size: 20px 20px;
+	width: 1000px;
+	height: 900px;
+}
+
+@keyframes typing {
+	from {
+		width: 0;
+	}
+	to {
+		width: 93%;
+	}
+}
+
+@keyframes blink {
+	to {
+		border-color: transparent;
+	}
+}
+
+.typing-animation {
+	border-right: 2px solid hsl(var(--foreground));
+	white-space: nowrap;
+	overflow: hidden;
+	animation:
+		typing 3s steps(40, end) 1s 1 normal both,
+		blink 0.8s steps(1, end) infinite;
+	width: 0;
+}

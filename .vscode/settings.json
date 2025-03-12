@@ -12,5 +12,10 @@
 		"**/build": true,
 		"**/dist": true,
 		"**/node_modules": true
-	}
+	},
+	"editor.formatOnSave": true,
+	"editor.formatOnPaste": true,
+	"editor.formatOnType": true,
+	"editor.fontLigatures": false,
+	"editor.defaultFormatter": "esbenp.prettier-vscode"
 }

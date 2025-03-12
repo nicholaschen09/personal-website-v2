@@ -5,7 +5,8 @@ import { usePathname } from "next/navigation"
 
 import clsx from "clsx"
 
-import { navConfig } from "@/config"
+import { navConfig } from "@/config/nav"
+import "@/app/globals.css"
 
 export const Nav = () => {
 	const pathname = usePathname()
@@ -13,13 +14,13 @@ export const Nav = () => {
 	if (!navConfig) return null
 
 	return (
-		<nav className="flex items-center gap-4 text-sm lg:gap-6">
-			{navConfig?.map(({ title, href = "/" }: any) => (
+		<nav className="flex gap-8 lg:gap-10 items-center">
+			{navConfig?.map(({ title, href = "/" }: any, index) => (
 				<Link
-					key={href}
+					key={index}
 					href={href}
 					className={clsx(
-						"transition-colors hover:text-foreground/80",
+						"nav-link",
 						pathname === href ? "text-foreground" : "text-foreground/60"
 					)}
 				>

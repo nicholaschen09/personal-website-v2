@@ -1,43 +1,33 @@
 import Balancer from "react-wrap-balancer"
 import Link from "next/link"
 
-import { Icons } from "@/icons"
-
-import { Badge, Button } from "@/ui"
+import "@/app/globals.css"
 
 export default function Home() {
 	return (
 		<>
-			<section className="mx-auto flex max-w-[980px] flex-col items-center gap-2 py-8 md:py-12 md:pb-8 lg:py-40 lg:pb-20">
-				<Link
-					href="https://github.com/nicholaschen09"
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					<Badge variant="secondary">@nicholaschen09</Badge>
-				</Link>
-
-				<h1 className="text-center text-3xl font-bold leading-tight tracking-tighter md:text-5xl lg:leading-[1.1]">
-					nicholaschen
+			<section className="mx-auto flex max-w-[980px] flex-col gap-2 py-8 md:py-12 md:pb-8 lg:py-40 lg:pb-20 dotted-paper-background">
+				<h1 className="text-left text-3xl font-bold leading-tight tracking-tighter md:text-5xl lg:leading-[1.1] text-[hsl(var(--foreground))] ml-10">
+					Nicholas Chen
 				</h1>
 
-				<p className="text-center text-lg font-light text-foreground">
+				<p className="text-left text-[16.8px] font-light text-[hsl(var(--foreground))] mt-4 md:mt-6 lg:mt-8 ml-10 typing-animation">
 					<Balancer>
-						An open source boilerplate built using Next.js 14, TypeScript, and
-						Tailwind CSS
+						I&apos;m a software engineering intern at Ownr doing full stack web
+						development, and a Systems Design Engineering student at the
+						University of Waterloo. Previously, I&apos;ve helped create awesome
+						things at RBC and Meta Hash Capital.
 					</Balancer>
 				</p>
 
-				<nav className="flex items-center gap-4 py-4">
+				<nav className="flex justify-end items-center gap-4 py-4 mt-8 md:mt-10 lg:mt-12 mr-11">
 					<Link
 						href="https://github.com/nicholaschen09"
 						target="_blank"
 						rel="noopener noreferrer"
+						className="text-[hsl(var(--foreground))] text-lg"
 					>
-						<Button variant="outline" size="sm">
-							<Icons.github className="h-4 w-4 mr-2" aria-label="GitHub" />
-							<span>GitHub</span>
-						</Button>
+						<img src="/github.png" alt="GitHub" className="h-8 w-8" />
 					</Link>
 				</nav>
 			</section>

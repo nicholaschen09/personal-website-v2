@@ -5,7 +5,7 @@ import { Providers } from "@/providers"
 import { SpeedInsights } from "@vercel/speed-insights/next"
 
 import { Header } from "@/shared"
-import { siteConfig } from "@/config/site"
+import { siteConfig } from "@/config"
 
 import "./globals.css"
 
@@ -18,11 +18,9 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
 	children
-}: Readonly<{
-	children: React.ReactNode
-}>) {
+}: Readonly<{ children: React.ReactNode }>) {
 	return (
-		<html lang="en">
+		<html lang="en" className="dark">
 			<body className={inter.className}>
 				<Providers>
 					<Header />
