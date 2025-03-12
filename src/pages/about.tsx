@@ -1,5 +1,6 @@
 import React from "react"
 import Balancer from "react-wrap-balancer"
+import Image from "next/image"
 import Link from "next/link"
 
 import { Header } from "@/shared"
@@ -12,15 +13,14 @@ const About = () => {
 			<Header />
 			<section className="mx-auto flex max-w-[980px] flex-col items-start gap-2 py-8 md:py-12 md:pb-8 lg:py-40 lg:pb-20 dotted-paper-background">
 				<h1 className="text-left text-3xl font-bold leading-tight tracking-tighter md:text-5xl lg:leading-[1.1] text-[hsl(var(--foreground))] ml-10 max-w-[50%]">
-					Hi I'm Nicholas!
+					Hi I&apos;m Nicholas!
 				</h1>
 				<p className="text-left text-[16.8px] font-light text-[hsl(var(--foreground))] mt-4 md:mt-6 lg:mt-8 mr-10 max-w-[50%] ml-10">
 					<Balancer>
-						I'm a Systems Design Engineering student at the University of
+						I&apos;m a Systems Design Engineering student at the University of
 						Waterloo who loves creating cool things.
 					</Balancer>
 				</p>
-
 				<nav className="flex items-center gap-4 py-4 mt-8 md:mt-10 lg:mt-12 ml-6">
 					<Link
 						href="https://github.com/nicholaschen09"
@@ -28,7 +28,7 @@ const About = () => {
 						rel="noopener noreferrer"
 						className="text-[hsl(var(--foreground))] text-lg ml-4"
 					>
-						<img src="/github.png" alt="GitHub" className="h-8 w-8" />
+						<Image src="/github.png" alt="GitHub" width={32} height={32} />
 					</Link>
 				</nav>
 			</section>

@@ -15,9 +15,9 @@ export default function Home() {
 
 				<p className="text-left text-[16.8px] font-light text-[hsl(var(--foreground))] mt-4 md:mt-6 lg:mt-8 ml-10 typing-animation">
 					<Balancer>
-						I'm a software engineering intern at Ownr doing full stack web
+						I&apos;m a software engineering intern at Ownr doing full stack web
 						development, and a Systems Design Engineering student at the
-						University of Waterloo. Previously, I've helped create awesome
+						University of Waterloo. Previously, I&apos;ve helped create awesome
 						things at RBC and Meta Hash Capital.
 					</Balancer>
 				</p>
