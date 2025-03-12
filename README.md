@@ -1,6 +1,6 @@
-# Next.js Boilerplate
+# Personal Website
 
-An open source boilerplate built using **Next.js 14**, **TypeScript**, and **Tailwind CSS**
+Built using **Next.js 14**, **TypeScript**, and **Tailwind CSS**
 
 ## Features
 
