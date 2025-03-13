@@ -24,8 +24,7 @@ export default function RootLayout({
 			<body className={`${inter.className} dotted-paper-background`}>
 				<Providers>
 					<Header />
-
-					<main className="flex flex-col">{children}</main>
+					<main className="flex flex-col min-h-screen mb-100">{children}</main>
 					<SpeedInsights />
 				</Providers>
 			</body>
