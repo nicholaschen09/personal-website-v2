@@ -6,7 +6,7 @@ import { useTypewriter } from "react-simple-typewriter"
 export default function Home() {
 	const [text] = useTypewriter({
 		words: [
-			"I'm a software engineering intern at Ownr doing full stack web development, and a Systems Design Engineering student at the University of Waterloo. Previously, I've helped create awesome things at RBC and Meta Hash Capital."
+			"I am a software engineering intern at Ownr doing full stack web development, and a Systems Design Engineering student at the University of Waterloo. Previously, I've helped create awesome things at RBC and Meta Hash Capital."
 		],
 		loop: false,
 		typeSpeed: 25
