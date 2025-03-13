@@ -8,7 +8,7 @@ import "@/app/globals.css"
 export const Header = () => {
 	return (
 		<header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 text-white text-center">
-			<div className="container h-14 flex max-w-screen-lg items-center justify-between">
+			<div className="container h-14 flex max-w-screen-xl items-center justify-between">
 				<div className="flex gap-8 lg:gap-10 items-center">
 					<Brand />
 					<Nav />
